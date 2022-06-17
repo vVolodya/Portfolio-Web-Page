@@ -10,7 +10,9 @@
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+	<link id="theme-style" rel="stylesheet" type="text/css" href="">
 	<title>Vladimir Evseev</title>
 </head>
 
@@ -18,11 +20,13 @@
 
 	<section class="s1">
 		<div class="main-container">
+
 			<div class="greeting-wrapper">
 				<h1>Hey, I am Volodya</h1>
 			</div>
 
 			<div class="intro-wrapper">
+
 				<div class="nav-wrapper">
 					<div class="dots-wrapper">
 						<div id='dot-1' class="browser-dot"></div>
@@ -39,17 +43,14 @@
 					<h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
 
 					<div class="theme-options-wrapper">
-						<div id='light-mode' class="theme-dot"></div>
-						<div id='blue-mode' class="theme-dot"></div>
-						<div id='green-mode' class="theme-dot"></div>
-						<div id='purple-mode' class="theme-dot"></div>
+						<div data-mode='light' id='light-mode' class="theme-dot"></div>
+						<div data-mode='blue' id='blue-mode' class="theme-dot"></div>
+						<div data-mode='green' id='green-mode' class="theme-dot"></div>
+						<div data-mode='purple' id='purple-mode' class="theme-dot"></div>
 					</div>
 
 					<p id="settings-note">*theme settings will be saved for <br>your next visit</p>
-
 				</div>
-
-
 
 				<div class="right-column">
 					<div id="preview-shadow">
@@ -63,6 +64,7 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
 
 		</div>
@@ -70,19 +72,115 @@
 
 	<section class="s2">
 		<div class="main-container">
-			About
+
+			<div class="about-wrapper">
+				<div class="about-me">
+					<h4>More about me</h4>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab facilis eveniet eos quidem eligendi esse ipsum
+						libero nam neque impedit.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati beatae modi pariatur, sapiente
+						cupiditate repudiandae? Aliquid veritatis dignissimos cupiditate?</p>
+
+					<hr>
+
+					<h4>TOP EXPERTISE</h4>
+					<p>Trainee Frontend developer with great ambitions: <a target='_blank' href="Resume - Evseev.pdf">Download
+							Resume</a></p>
+					<div class="skills">
+						<ul>
+							<li>JavaScript</li>
+							<li>Anything Else</li>
+							<li>Anything Else</li>
+							<li>Anything Else</li>
+							<li>Anything Else</li>
+						</ul>
+						<ul>
+							<li>Anything Else</li>
+							<li>Anything Else</li>
+							<li>Anything Else</li>
+							<li>Anything Else</li>
+							<li>Anything Else</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="social-links">
+					<img id="social-image" src="./images/placeholder.png" alt="placeholder">
+					<h3>Find me Somewhere</h3>
+					<a target='_blank' href="#">GitHub</a>
+					<br>
+					<a target='_blank' href="#">Twitter</a>
+				</div>
+			</div>
+
 		</div>
 	</section>
 
 	<section class="s1">
 		<div class="main-container">
-			Portfolio
+
+			<h3 style="text-align: center;">Some of my last projects</h3>
+
+			<div class="post-wrapper">
+
+				<div>
+					<div class="post">
+						<img class='thumbnail' src="./images/placeholder.png" alt="placeholder">
+						<div class="post-preview">
+							<h6 class="post-title">Post Title</h6>
+							<p class="post-intro">This is some text. And some more text here</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class='thumbnail' src="./images/placeholder.png" alt="placeholder">
+						<div class="post-preview">
+							<h6 class="post-title">Post Title</h6>
+							<p class="post-intro">This is some text. And some more text here</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class='thumbnail' src="./images/placeholder.png" alt="placeholder">
+						<div class="post-preview">
+							<h6 class="post-title">Post Title</h6>
+							<p class="post-intro">This is some text. And some more text</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
 		</div>
 	</section>
 
 	<section class="s2">
 		<div class="main-container">
-			Contact
+			<h3 style="text-align: center;">Get In touch</h3>
+
+			<form id='contact-form' action="">
+				<label for="">Name</label>
+				<input class="input-field" type="text" name="name" autocomplete="off">
+
+				<label for="">Subject</label>
+				<input class="input-field" type="text" name="subject" autocomplete="off">
+
+				<label for="">Email</label>
+				<input class="input-field" type="text" name="email" autocomplete="off">
+
+				<label for="">Message</label>
+				<textarea class="input-field" type="text" name="message" autocomplete="off"></textarea>
+
+				<input id='submit-btn' type="submit" value="Send">
+			</form>
+
 		</div>
 	</section>
 
@@ -93,7 +191,7 @@
 
 
 
-
+	<script src="./script.js"></script>
 
 </body>
 
